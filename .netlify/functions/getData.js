@@ -3,9 +3,9 @@ exports.handler = function(event, context, callback) {
         statusCode: 200,
         // body: event.queryStringParameters
         body: {
-            timeSeries: ["9:00", "10:00", "11:00", "12:00",  "13:00", "14:00", "15:00"],
-            totalUsage: [ 12, 54, 13, 44, 22, 33, 35],
-            users: [
+            "timeSeries": ["9:00", "10:00", "11:00", "12:00",  "13:00", "14:00", "15:00"],
+            "totalUsage": [ 12, 54, 13, 44, 22, 33, 35],
+            "users": [
                 {
                     'cold': [8, 34, 0, 4, 5, 15, 9],
                     'hot': [0, 10, 0, 0, 0, 5, 21],
