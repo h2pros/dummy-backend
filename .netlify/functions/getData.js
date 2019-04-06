@@ -2,7 +2,7 @@ exports.handler = function(event, context, callback) {
     callback(null, {
         statusCode: 200,
         // body: event.queryStringParameters
-        body: {
+        body: JSON.stringify({
             "timeSeries": ["9:00", "10:00", "11:00", "12:00",  "13:00", "14:00", "15:00"],
             "totalUsage": [ 12, 54, 13, 44, 22, 33, 35],
             "users": [
@@ -17,6 +17,6 @@ exports.handler = function(event, context, callback) {
                     'total': [4, 10, 13, 40, 17, 13, 5]
                 }
             ]
-        }
+        })
     });
 }
